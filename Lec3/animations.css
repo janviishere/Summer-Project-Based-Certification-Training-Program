@@ -1,0 +1,76 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(168, 124, 187);
+}
+
+.box{
+    height: 100px;
+    width: 200px;
+    background-color: rgb(105, 231, 128);
+    position: absolute;
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moving{
+    from{
+        background-color: rgb(48, 152, 115);
+        top: 0%;
+        left: 0%;
+    }
+
+    to{
+        background-color: rgb(14, 6, 99);
+        top: 0%;
+        left: 800px;
+    }
+}
+
+.box2{
+    height: 100px;
+    width: 200px;
+    background-color: rgb(8, 227, 48);
+    position: absolute;
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moving{
+    0%{
+        background-color: rgb(21, 212, 145);
+        top: 0%;
+        left: 0%;
+    }
+
+    25%{
+        background-color: rgb(17, 217, 23);
+        top: 0%;
+        left: 800px;
+    }
+
+    50%{
+        background-color: rgb(158, 239, 156);
+        top: 500px;
+        left:0%;
+    }
+
+    100%{
+        background-color: chartreuse;
+        top: 0%;
+        left: 0%;
+    }
+}
+
